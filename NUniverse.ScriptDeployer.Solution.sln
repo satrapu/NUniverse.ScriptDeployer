@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUniverse.ScriptDeployer.Core", "NUniverse.ScriptDeployer.Core\NUniverse.ScriptDeployer.Core.csproj", "{677354DF-273B-430C-9B9A-298756C746B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUniverse.ScriptDeployer.ConsoleRunner", "NUniverse.ScriptDeployer.ConsoleRunner\NUniverse.ScriptDeployer.ConsoleRunner.csproj", "{809BEE5B-70C7-4373-893F-897EF1896CA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E782D5A4-6AC8-47CD-96DD-0CF5C732817D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crossprogramming.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NUniverse.ScriptDeployer.ConsoleRunner\\NUniverse.ScriptDeployer.ConsoleRunner.csproj
+		SccProjectName1 = NUniverse.ScriptDeployer.ConsoleRunner
+		SccLocalPath1 = NUniverse.ScriptDeployer.ConsoleRunner
+		SccProjectUniqueName2 = NUniverse.ScriptDeployer.Core\\NUniverse.ScriptDeployer.Core.csproj
+		SccProjectName2 = NUniverse.ScriptDeployer.Core
+		SccLocalPath2 = NUniverse.ScriptDeployer.Core
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{677354DF-273B-430C-9B9A-298756C746B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677354DF-273B-430C-9B9A-298756C746B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677354DF-273B-430C-9B9A-298756C746B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677354DF-273B-430C-9B9A-298756C746B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809BEE5B-70C7-4373-893F-897EF1896CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809BEE5B-70C7-4373-893F-897EF1896CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809BEE5B-70C7-4373-893F-897EF1896CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809BEE5B-70C7-4373-893F-897EF1896CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

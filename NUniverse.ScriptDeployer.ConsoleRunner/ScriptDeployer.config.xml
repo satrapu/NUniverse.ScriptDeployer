@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<databasePackages rootFolder=".\DbScripts">
+  <package name="Package_Database1"
+           connectionString="ConnString1"
+           folder="Database1">
+    <rolloutScripts include="(*+)(\s*)-(\s*)Rollout(\s*)\.sql"
+                    exclude="*"/>
+    <rollbackScripts include="(*+)(\s*)-(\s*)Rollback(\s*)\.sql"
+                     exclude="*"/>
+  </package>
+  <package name="Package_Database2"
+           connectionString="ConnString2"
+           folder="Database2">
+    <scripts include="*\.sql"
+             exclude="*"/>
+  </package>
+  <package name="Package_Database3"
+           connectionString="DataSource=localhost;Initial Catalog=database3; User ID=user; Password=p@assword;"
+           folder="Database3">
+    <scripts include="*\.sql"
+             exclude="*"/>
+  </package>
+  <package name="Package_Database4"
+           connectionString="Data Source=C:\database4.sqlite.db;Version=3;"
+           folder="Database4">
+    <scripts include="*\.sql"
+             exclude="*"/>
+  </package>
+</databasePackages>
