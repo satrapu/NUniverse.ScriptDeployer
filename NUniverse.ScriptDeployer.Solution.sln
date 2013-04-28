@@ -13,18 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E782D5
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://crossprogramming.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = NUniverse.ScriptDeployer.ConsoleRunner\\NUniverse.ScriptDeployer.ConsoleRunner.csproj
-		SccProjectName1 = NUniverse.ScriptDeployer.ConsoleRunner
-		SccLocalPath1 = NUniverse.ScriptDeployer.ConsoleRunner
-		SccProjectUniqueName2 = NUniverse.ScriptDeployer.Core\\NUniverse.ScriptDeployer.Core.csproj
-		SccProjectName2 = NUniverse.ScriptDeployer.Core
-		SccLocalPath2 = NUniverse.ScriptDeployer.Core
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
