@@ -1,4 +1,4 @@
-NUniverse.ScriptDeployer
+NUniverse.ScriptDeployer [![Build Status](https://travis-ci.org/satrapu/NUniverse.ScriptDeployer.png?branch=master)](https://travis-ci.org/satrapu/NUniverse.ScriptDeployer)
 ========================
 
 Description
