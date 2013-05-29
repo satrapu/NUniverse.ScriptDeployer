@@ -4,7 +4,7 @@ using System.Data.Common;
 namespace NUniverse.ScriptDeployer.Core
 {
     /// <summary>
-    /// Represents a sum of SQL scripts to be deployed against a database.
+    /// Represents a sum of SQL scripts to be deployed against a relational database.
     /// </summary>
     public class DatabasePackage
     {

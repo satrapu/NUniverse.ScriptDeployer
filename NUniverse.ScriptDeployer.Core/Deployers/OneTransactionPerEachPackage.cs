@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 
 namespace NUniverse.ScriptDeployer.Core.Deployers
 {
     /// <summary>
-    /// <seealso cref="IDatabasePackageDeployer"/> implementation which uses one local ADO.NET transaction for each database package to be deployed.
+    /// <seealso cref="IDatabasePackageDeployer"/> implementation which uses one local 
+    /// ADO.NET transaction for each database package to be deployed.
     /// </summary>
     public class OneTransactionPerEachPackage : IDatabasePackageDeployer
     {
@@ -25,6 +27,7 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 try
                 {
                     dbConnection = databasePackage.Provider.CreateConnection();
+                    Debug.Assert(dbConnection != null, "dbConnection != null");
                     dbConnection.ConnectionString = databasePackage.ConnectionString;
                     dbConnection.Open();
                     dbTransaction = dbConnection.BeginTransaction();
@@ -84,6 +87,7 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 try
                 {
                     dbConnection = databasePackage.Provider.CreateConnection();
+                    Debug.Assert(dbConnection != null, "dbConnection != null");
                     dbConnection.ConnectionString = databasePackage.ConnectionString;
                     dbConnection.Open();
                     dbTransaction = dbConnection.BeginTransaction();

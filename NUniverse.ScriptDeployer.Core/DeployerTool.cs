@@ -16,7 +16,8 @@
         }
 
         /// <summary>
-        /// Gets or sets tkhe <seealso cref="IDatabasePackageDeployer"/> implementation to be used when deploying database packages.
+        /// Gets or sets tkhe <seealso cref="IDatabasePackageDeployer"/> implementation to be used when deploying 
+        /// database packages.
         /// </summary>
         public IDatabasePackageDeployer Deployer
         {
@@ -29,7 +30,8 @@
         /// </summary>
         /// <param name="scanner">The <seealso cref="IDatabasePackageScanner"/> implementation 
         /// to be used when scanning for database packages available for deploying.</param>
-        /// <param name="deployer">The <seealso cref="IDatabasePackageDeployer"/> implementation to be used when deploying database packages.</param>
+        /// <param name="deployer">The <seealso cref="IDatabasePackageDeployer"/> implementation to be used when 
+        /// deploying database packages.</param>
         public DeployerTool(IDatabasePackageScanner scanner, IDatabasePackageDeployer deployer)
         {
             Scanner = scanner;

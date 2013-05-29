@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Transactions;
+using IsolationLevel = System.Transactions.IsolationLevel;
 
 namespace NUniverse.ScriptDeployer.Core.Deployers
 {
     /// <summary>
-    /// <seealso cref="IDatabasePackageDeployer"/> implementation which uses one distributed ADO.NET transaction for all database packages to be deployed.
+    ///     <seealso cref="IDatabasePackageDeployer" /> implementation which uses one distributed ADO.NET transaction for all database packages to be deployed.
     /// </summary>
     public class OneTransactionPerAllPackages : IDatabasePackageDeployer
     {
@@ -18,8 +20,7 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 return;
             }
 
-            TransactionOptions options = new TransactionOptions();
-            options.IsolationLevel = System.Transactions.IsolationLevel.Serializable;
+            TransactionOptions options = new TransactionOptions { IsolationLevel = IsolationLevel.Serializable };
 
             using (TransactionScope transactionScope = new TransactionScope(TransactionScopeOption.Required, options))
             {
@@ -27,6 +28,7 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 {
                     using (IDbConnection dbConnection = databasePackage.Provider.CreateConnection())
                     {
+                        Debug.Assert(dbConnection != null, "dbConnection != null");
                         dbConnection.ConnectionString = databasePackage.ConnectionString;
                         dbConnection.Open();
 
@@ -55,8 +57,10 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 return;
             }
 
-            TransactionOptions options = new TransactionOptions();
-            options.IsolationLevel = System.Transactions.IsolationLevel.Serializable;
+            TransactionOptions options = new TransactionOptions
+                {
+                    IsolationLevel = IsolationLevel.Serializable
+                };
 
             using (TransactionScope transactionScope = new TransactionScope(TransactionScopeOption.Required, options))
             {
@@ -64,6 +68,7 @@ namespace NUniverse.ScriptDeployer.Core.Deployers
                 {
                     using (IDbConnection dbConnection = databasePackage.Provider.CreateConnection())
                     {
+                        Debug.Assert(dbConnection != null, "dbConnection != null");
                         dbConnection.ConnectionString = databasePackage.ConnectionString;
                         dbConnection.Open();
 

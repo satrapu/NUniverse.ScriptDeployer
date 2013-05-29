@@ -1,7 +1,9 @@
 ﻿namespace NUniverse.ScriptDeployer.Core
 {
     /// <summary>
-    /// Encapsulates one SQL script to be deployed against a database.
+    /// Encapsulates one SQL script to be deployed against a database. 
+    /// Usually, this script is written using non-portable constructs 
+    /// in order to exploit all available features of the target database.
     /// </summary>
     public class DatabaseScript
     {
