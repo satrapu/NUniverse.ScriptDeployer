@@ -2,7 +2,7 @@
 using System.Data;
 using System.Diagnostics;
 
-namespace NUniverse.ScriptDeployer.Core.Deployers
+namespace SqlScriptsDeployer.Core.Deployers
 {
     /// <summary>
     /// <seealso cref="IDatabasePackageDeployer"/> implementation which uses one local 

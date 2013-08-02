@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NUniverse.ScriptDeployer.Core.Scanners
+namespace SqlScriptsDeployer.Core.Scanners
 {
     /// <summary>
     /// <seealso cref="IDatabasePackageScanner"/> implementation which returns the database packages received during construction.

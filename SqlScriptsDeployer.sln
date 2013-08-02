@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUniverse.ScriptDeployer.Core", "NUniverse.ScriptDeployer.Core\NUniverse.ScriptDeployer.Core.csproj", "{677354DF-273B-430C-9B9A-298756C746B5}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlScriptsDeployer.Core", "SqlScriptsDeployer.Core\SqlScriptsDeployer.Core.csproj", "{677354DF-273B-430C-9B9A-298756C746B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUniverse.ScriptDeployer.ConsoleRunner", "NUniverse.ScriptDeployer.ConsoleRunner\NUniverse.ScriptDeployer.ConsoleRunner.csproj", "{809BEE5B-70C7-4373-893F-897EF1896CA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlScriptsDeployer.ConsoleRunner", "SqlScriptsDeployer.ConsoleRunner\SqlScriptsDeployer.ConsoleRunner.csproj", "{809BEE5B-70C7-4373-893F-897EF1896CA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E782D5A4-6AC8-47CD-96DD-0CF5C732817D}"
 	ProjectSection(SolutionItems) = preProject

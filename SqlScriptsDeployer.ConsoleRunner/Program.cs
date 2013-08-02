@@ -1,4 +1,4 @@
-﻿namespace NUniverse.ScriptDeployer.ConsoleRunner
+﻿namespace SqlScriptsDeployer.ConsoleRunner
 {
     public static class Program
     {

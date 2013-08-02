@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Common;
 
-namespace NUniverse.ScriptDeployer.Core
+namespace SqlScriptsDeployer.Core
 {
     /// <summary>
     /// Represents a sum of SQL scripts to be deployed against a relational database.

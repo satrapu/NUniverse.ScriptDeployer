@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NUniverse.ScriptDeployer.Core
+namespace SqlScriptsDeployer.Core
 {
     /// <summary>
     /// Scans for database packages available for deployment.

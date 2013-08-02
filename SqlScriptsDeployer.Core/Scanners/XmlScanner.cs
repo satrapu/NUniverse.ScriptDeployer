@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace NUniverse.ScriptDeployer.Core.Scanners
+namespace SqlScriptsDeployer.Core.Scanners
 {
     /// <summary>
     /// <seealso cref="IDatabasePackageScanner"/> implementation which fetches the list of database packages available for deployment

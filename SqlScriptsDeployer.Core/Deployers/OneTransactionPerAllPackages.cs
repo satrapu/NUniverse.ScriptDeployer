@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Transactions;
 using IsolationLevel = System.Transactions.IsolationLevel;
 
-namespace NUniverse.ScriptDeployer.Core.Deployers
+namespace SqlScriptsDeployer.Core.Deployers
 {
     /// <summary>
     ///     <seealso cref="IDatabasePackageDeployer" /> implementation which uses one distributed ADO.NET transaction for all database packages to be deployed.

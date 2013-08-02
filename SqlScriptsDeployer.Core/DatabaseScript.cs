@@ -1,4 +1,4 @@
-﻿namespace NUniverse.ScriptDeployer.Core
+﻿namespace SqlScriptsDeployer.Core
 {
     /// <summary>
     /// Encapsulates one SQL script to be deployed against a database. 
