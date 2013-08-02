@@ -3,7 +3,7 @@ SQL Scripts Deployer [![Build Status](https://travis-ci.org/satrapu/sql-scripts-
 
 Description
 -
-Deploys scripts to relational databases.
+Deploys SQL scripts to relational databases.
 
 Current version
 -
